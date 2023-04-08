@@ -26,6 +26,11 @@ Auth::routes();
 
 Route::get('/',[App\Http\Controllers\Frontend\FrontendController::class,'index']);
 
+Route::get('/collections',[App\Http\Controllers\Frontend\FrontendController::class,'directories']);
+Route::get('/collections/{directory_name}',[App\Http\Controllers\Frontend\FrontendController::class,'department']);
+
+
+
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::prefix('admin')->middleware(['auth','isAdmin'])->group(function () {

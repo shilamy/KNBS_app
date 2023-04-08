@@ -35,7 +35,7 @@
                                     @if($department->directory)
                                     {{$department->directory->name}}
                                     @else
-                                        No Category
+                                        No Directory
                                     @endif
                                 </td>
                                 <td>{{$department->name}}</td>

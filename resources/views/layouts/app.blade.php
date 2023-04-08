@@ -15,7 +15,7 @@
 
 
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-   
+
 
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
@@ -31,9 +31,9 @@
 
         @include('layouts.inc.admin.frontend.navbar')
 
-        
 
-        <main class="py-4">
+
+        <main>
             @yield('content')
         </main>
     </div>

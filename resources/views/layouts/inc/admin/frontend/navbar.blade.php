@@ -1,3 +1,4 @@
+
 <div class="main-navbar shadow-sm sticky-top">
     <div class="top-navbar">
         <div class="container-fluid">
@@ -77,13 +78,23 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="{{url('/')}}">Home</a>
                     </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="{{url('/collections')}}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            All Directories
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="{{url('/collections')}}">OFFICE OF THE DIRECTOR GENERAL</a></li>
+                          <li><a class="dropdown-item" href="{{url('/collections')}}">COPORATE SERVICE DIRECTORATE</a></li>
+                          <li><a class="dropdown-item" href="{{url('/collections')}}">STATISTICAL COORDINATION AND METHOD DIRECTORATE</a></li>
+                          <li><a class="dropdown-item" href="{{url('/collections')}}">POPULATION AND SOCIAL STATICS DIRECTORATE</a></li>
+                          <li><a class="dropdown-item" href="{{url('/collections')}}">SMACROECONOMIC STATISTICS DIRECTORATE</a></li>
+                        </ul>
+                      </li>
+
                     <li class="nav-item">
-                        <a class="nav-link" href="#">All Directories</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">New Extensions</a>
+                        <a class="nav-link" href="{{url('/new-extensions')}}">Extensions</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Departments</a>
